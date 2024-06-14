@@ -1,38 +1,201 @@
-.App {
-  text-align: center;
+body{
+  overflow-x: hidden;
+  background-image: url(https://images.pexels.com/photos/2775196/pexels-photo-2775196.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg {
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  backdrop-filter: blur(5px);
+  position: relative;
+  left: 30vw;
+  top: 5vh;
+  width: 40vw;
+  height: 70vh;
+  background-color: #30303070;
+  border-radius: 40px;
+  /* border: 1px solid red; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.group {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  max-width: 190px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input {
+  width: 100%;
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #f3f3f485;
+  color: #0d0c22;
+  transition: 0.3s ease;
+}
+
+.input::placeholder {
+  color: #9e9ea7;
+}
+
+.input:focus,
+input:hover {
+  outline: none;
+  border-color: rgba(234, 226, 183, 0.4);
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgb(234 226 183 / 10%);
+}
+
+.icon {
+  position: absolute;
+  left: 1rem;
+  fill: #9e9ea7;
+  width: 1rem;
+  height: 1rem;
+}
+
+.inputBtn:hover {
+  background-color: #3434f4;
+}
+.inputBtn {
+  margin-left: 10px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  background-color: #8080f33f;
+  color: white;
+  cursor: pointer;
+}
+
+.search {
+  padding-top: 40px;
+  /* border: 1px solid red; */
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.cityName {
+  /* border: 1px solid red; */
+  font-size: 50px;
+  font-weight: bolder;
+  color: white;
   display: flex;
   flex-direction: column;
+  /* justify-content:center ; */
   align-items: center;
+}
+
+.cityName p {
+  margin: 0;
+}
+
+.dat {
+  padding-top: 10px;
+  font-size: 15px;
+}
+
+.weatherIcon img {
+  height: 150px;
+}
+
+.weatherIcon {
+  /* border: 1px solid red; */
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.temprature {
+  /* border: 1px solid red; */
+  display: flex;
+  height: 100px;
+  justify-content: center;
+}
+
+.temprature p {
+  margin: 0%;
+  font-size: 80px;
+  font-weight: bolder;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.seprator {
+  margin-left: 12px;
+  margin-right: 10px;
+  width: 3px;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 80px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weatherCondition p {
+  margin: 0;
+  padding-top: 10px;
 }
+.weatherCondition {
+  display: flex;
+  justify-content: center;
+  margin: 0%;
+  font-size: 15px;
+  font-weight: bolder;
+  color: white;
+}
+.weatherInfo p {
+  margin: 0;
+  padding-top: 10px;
+}
+.weatherInfo {
+  display: flex;
+  justify-content: center;
+  margin: 0%;
+  font-size: 15px;
+  font-weight: bolder;
+  color: white;
+}
+.windSpeed {
+  padding-right: 200px;
+}
+/* .forecast{
+  border: 1px solid red;
+} */
+
+/* .weather-details { */
+  /* width: 250px; */
+  /* height: 100px; */
+  /* overflow: hidden; */
+/* } */
+
+.forecast-item:hover {
+  scale: 1.1;
+}
+.forecast-item {
+  transition: all;
+  transition-duration: 0.3s;
+  width: 150px;
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  border: none;
+  background: #30303070;
+  backdrop-filter: blur(5px);
+  border-radius: 40px;
+  color: white;
+}
+
+.weather-forecast {
+  position: absolute;
+  top: 80vh;
+  display: flex;
+  width: 100vw;
+  /* border: 1px solid green; */
+  justify-content: center;
+}
+
