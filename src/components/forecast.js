@@ -20,16 +20,6 @@ function WeatherForecast({ forecastData }) {
   // Function to display weather information for a given date
   const renderWeatherForDate = (date, forecasts) => (
     <div key={date}>
-      {/* <div className="weather-details ">
-        {forecasts.map((forecast) => (
-          <div className="forecast-item" key={forecast.dt}>
-          <p>Time: {forecast.dt_txt.split(' ')[1]}</p>
-          <p>Temperature: {forecast.main.temp} K</p>
-          <p>Weather: {forecast.weather[0].description}</p>
-          <hr />
-          </div>
-          ))}
-          </div> */}
       <div className="weather-details ">
         <div className="forecast-item">
           <h2>{formatDate(forecasts[0].dt)}</h2>

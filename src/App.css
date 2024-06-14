@@ -175,6 +175,7 @@ input:hover {
 
 .forecast-item:hover {
   scale: 1.1;
+  background: #908f8f70;
 }
 .forecast-item {
   transition: all;
